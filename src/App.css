@@ -1,0 +1,142 @@
+/* /* .container {
+  width: 100%;
+  background-color: rgb(209, 42, 195);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.unos {
+  margin: 20px 0;
+}
+input {
+  padding: 10px 20px;
+  font-size: 25px;
+}
+
+.card {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 20px 0;
+  width: 500px;
+}
+.checked {
+  background-color: greenyellow;
+}
+.card div {
+  height: 100%;
+  width: 30%;
+}
+
+.card button {
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+}
+
+.check {
+  background-color: green;
+}
+
+.delete {
+  background-color: red;
+}
+
+p {
+  color: white;
+  font-size: 23px;
+} */
+
+
+/* .search {
+  width: 100vw;
+  height:200px;
+  background-color: #fff;
+}
+
+.conteiner {
+  padding-top: 40px;
+  width: 70vw;
+  height:400px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.left{
+  width: 40%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.image{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+
+
+.info {
+  width: 50%;
+} */
+
+/* .conteiner {
+  width: 70vw;
+  height: 70vh;
+  background-color: rgb(161, 156, 156);
+}
+
+
+
+.nav {
+  background-color: greenyellow;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav li {
+  list-style-type: none;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.nav li:hover {
+  color: white;
+}
+
+.dropdown {
+  margin: auto;
+  margin-top: 5px;
+
+  width: 40%;
+  display: block;
+  background-color: rgb(172, 165, 165);
+  height: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+} */
+
+.conteiner {
+  width: 300px;
+  height: 200px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
