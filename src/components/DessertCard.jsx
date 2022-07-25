@@ -1,6 +1,6 @@
 const DessertCard= ({des}) => {
     return (
-        <div className="conteiner" key={des.uid}>
+        <div className="conteiner">
           <h1>{ "Flavor is " + des.flavor}</h1>
           <p>{ "Id is " + des.id}</p>
           <p>{ "Topping is " + des.topping}</p>
@@ -10,7 +10,4 @@ const DessertCard= ({des}) => {
 }
 
 
-export default DessertCard
-
-
-
+export default DessertCard;

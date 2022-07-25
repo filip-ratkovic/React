@@ -1,4 +1,4 @@
-/* /* .container {
+.container {
   width: 100%;
   background-color: rgb(209, 42, 195);
   min-height: 100vh;
@@ -54,10 +54,10 @@ input {
 p {
   color: white;
   font-size: 23px;
-} */
+} 
 
 
-/* .search {
+.search {
   width: 100vw;
   height:200px;
   background-color: #fff;
@@ -87,9 +87,9 @@ border-radius: 50%;
 
 .info {
   width: 50%;
-} */
+} 
 
-/* .conteiner {
+ /* .conteiner {
   width: 70vw;
   height: 70vh;
   background-color: rgb(161, 156, 156);
@@ -130,7 +130,7 @@ border-radius: 50%;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-} */
+}
 
 .conteiner {
   width: 300px;
@@ -139,4 +139,4 @@ border-radius: 50%;
   color: white;
   padding: 10px;
   margin: 10px;
-}
+}  */
