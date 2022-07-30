@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 const Calculator = () => {
   const [calc, setCalc] = useState("");
   const [result, setResult] = useState("");

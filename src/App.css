@@ -226,3 +226,15 @@ button:hover {
   max-width: 33.333%;
   font-weight:700;
 }
+
+
+.tours-cont{
+  width:80vw;
+  overflow:hidden;
+  background-color:white;
+margin:auto;
+}
+
+.tours-cont img{
+  width: 100%;
+}
