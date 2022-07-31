@@ -3,13 +3,13 @@ import { useEffect } from "react";
 import "./App.css";
 const Github = () => {
   const [facts, setFacts] = useState([]);
-
+let searchValue = ""
   
-  function getFacts() {
-    fetch("https://api.github.com/users/dzemildupljak")
+  function getFacts(user) {
+    fetch("https://api.github.com/users/"+ user)
       .then((res) => res.json())
-      .then((res) => {
-        setFacts(res)
+      .then((data) => {
+        setFacts(data)
         
       })
   }
@@ -26,8 +26,10 @@ const Github = () => {
           searchValue = e.target.value;
       }}
       />
-      <button type="button" id="btn" >
-        searchh
+      <button  onClick={() =>{
+        getFacts(searchValue)
+      }} type="button" id="btn" >
+        Search
       </button>
 
       <div className="conteiner">

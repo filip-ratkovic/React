@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import "./App.css";
-import TourCard from "./components/TourCard"
+import TourCard from "./TourCard"
 const url = "https://course-api.com/react-tours-project"
 
-const App = () => {
+const Tours = () => {
   const [tours, setTours] = useState([]);
 
   async function fetchTours() {
     const res = await fetch(url);
     const data = await res.json();
     setTours(data);
+    console.log(data);
   }
 
 
@@ -18,18 +18,26 @@ const App = () => {
     fetchTours()
   }, [])
 
+ 
+const onDelete = () => {
+tours.map((tour,i) => {
+    return (setTours(tours.filter((el,index)  => i!== index )))
+
+})
+}
 
   return (
- <div>
-   {tours.map((tour) => {
-return(
-<TourCard tour={tour} key={tour.id}/>
-  )
-})}
- </div>
+    <div>
+      {tours.map((tour,i,onDelete) => {
+        return (
+          <TourCard 
+            tour={tour} key={tour.id} onDelete={onDelete} />
+        )
+      })}
+    </div>
 
-   
+
   )
 }
 
-export default App;
+export default Tours;

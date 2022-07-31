@@ -229,12 +229,36 @@ button:hover {
 
 
 .tours-cont{
-  width:80vw;
+  width:70vw;
   overflow:hidden;
   background-color:white;
 margin:auto;
+font-family: sans-serif;
+color: #131a26;
+}
+
+.tours-cont button {
+  width:200px;
+  height: 40px;
+  text-align:center;
+  border:1px solid #d81e5b;
+  color: #d81e5b;
+  padding: 5px;
+  background-color:transparent;
+  border-radius: 4px;
+  margin-top: 10px;
 }
 
 .tours-cont img{
   width: 100%;
+}
+
+.tours-text{
+  margin: 20px;
+  padding: 20px;
+}
+.tours-info {
+  display: flex;
+  justify-content:space-between;
+padding-bottom: 10px;
 }
