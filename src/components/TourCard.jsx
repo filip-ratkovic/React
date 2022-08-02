@@ -1,4 +1,4 @@
-const TourCard = ({ tour }, {onDelete}) => {
+const TourCard = ({ tour }) => {
   return (
     <div className="tours-cont">
       <img src={tour.image} alt={tour.name} />
