@@ -1,0 +1,106 @@
+:root {
+    --primary:#d81e5b;
+    --secondary:#8c38ff;
+    --dark:#131a26;
+    --light:#eee;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+  }
+  
+  body {
+    background-color: var(--light)
+  }
+
+.loading {
+    width: 100vw;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tourse-tittle {
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: 4px solid rgb(3, 113, 128);
+}
+
+.tourse-tittle:hover {
+    cursor: pointer;
+    color: rgb(3, 113, 128);
+}
+
+.single-tour {
+    width: 63vw;
+    overflow: hidden;
+    background-color: white;
+    margin: auto;
+    font-family: sans-serif;
+    color: #131a26;
+    margin-top: 30px;
+    box-shadow: 0px 2px 64px  rgba(0, 0, 0, 0.2);
+
+}
+.single-tour footer {
+    margin: auto;
+    margin-top: 20px;
+    width:90%;
+}
+
+.single-tour footer p {
+    margin-top: 20px;
+}
+
+.delete-btn {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #d81e5b;
+    color: #d81e5b;
+    padding: 5px;
+    background-color: transparent;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.tour-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .tours-text {
+    margin: 20px;
+    padding: 20px;
+}
+
+.tours-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+} */
+
+.tour-price{
+    background-color:rgb(175, 238, 238);
+    color: rgb(3, 113, 128);
+    padding: 5px;
+    border-radius: 10px;
+    width:75px;
+    text-align:center;
+}
+
+.read-more {
+    background-color:transparent;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    color: rgb(3, 113, 128);
+    padding-left: 5px;
+    font-weight: bold;
+}

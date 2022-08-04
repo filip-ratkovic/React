@@ -1,9 +1,7 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import Calculator from "./components/Calculator"
-import "./App.css";
+import React from "react";
+import TourCard from "./components/TourCard";
 const App = () => {
- return 
+    return <TourCard/>
 };
 
 export default App;

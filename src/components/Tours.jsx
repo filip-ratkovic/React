@@ -1,42 +1,20 @@
-import { useState, useEffect } from "react";
-import TourCard from "./TourCard"
-const url = "https://course-api.com/react-tours-project"
+import React from "react";
+import Tour from "./Tour"
 
-const Tours = () => {
-  const [tours, setTours] = useState([]);
-
-  async function fetchTours() {
-    const res = await fetch(url);
-    const data = await res.json();
-    setTours(data);
-    console.log(data);
-  }
-
-
-
-  useEffect(() => {
-    fetchTours()
-  }, [])
-
- 
-const onDelete = () => {
-tours.map((tour,i) => {
-    return (setTours(tours.filter((el,index)  => i!== index )))
-
-})
-}
-
+const Tours = ({ tours, removeTour }) => {
   return (
-    <div>
-      {tours.map((tour,i,onDelete) => {
-        return (
-          <TourCard 
-            tour={tour} key={tour.id} onDelete={onDelete} />
-        )
-      })}
-    </div>
-
-
+    <section>
+      <div className="tourse-tittle">
+        <h1>Ours tours</h1>
+      </div>
+      <div className="underline">
+      </div>
+      <div>
+       {tours.map((tour) => {
+        return <Tour id={tour.id} {...tour} removeTour={removeTour} />
+        })}
+      </div>
+    </section>
   )
 }
 
