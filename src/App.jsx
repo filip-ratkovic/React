@@ -1,31 +1,53 @@
-import React, { useState } from "react";
-import Basket from "./components/ShoppingCard/Basket";
-import Header from "./components/ShoppingCard/Header";
-import Main from "./components/ShoppingCard/Main";
-import "./components/ShoppingCard/Shopping.css"
-import data from "./data"
-const App = () => {
-    const {products} = data;
-    const [cartItems, setCartItems] = useState([]);
+import { useState, useEffect } from "react";
+import React from "react";
+import axios from "axios"
+const Vezba = () => {
+    const axios = require("axios");
 
-const onAdd = (product) => {
-    const exist = cartItems.find(x => x.id === product.id);
-    if(exist) {
-        setCartItems(cartItems.map(x => x.id === product.id ? {...exist, qty : exist.qty + 1}: x))
-    } else {
-        setCartItems([...cartItems, {...product, qty: 1}]);
+    const options = {
+        method: 'GET',
+        url: 'https://numbersapi.p.rapidapi.com/6/21/date',
+        params: { fragment: 'true', json: 'true' },
+        headers: {
+            'X-RapidAPI-Key': '40b2a63a8cmsh465bf0c5b2ab485p1add32jsnf62aaa87247d',
+            'X-RapidAPI-Host': 'numbersapi.p.rapidapi.com'
+        }
+    };
+
+    axios.request(options).then(function (response) {
+        console.log(response.data);
+    }).catch(function (error) {
+        console.error(error);
+    });
+    const [data, setData] = useState([]);
+    const [inputedDate, setInputedDate] = useState([])
+
+    const fetchNumberData = async () => {
+        const res = await axios.request(options).catch((error) => console.log(error));
+        setData(res);
     }
-}
+
+
+    useEffect(() => {
+        fetchNumberData()
+    }, [])
+
+    const search = () => {
+        options.url = "https://numbersapi.p.rapidapi.com/" + inputedDate + "/date"
+        fetchNumberData()
+
+    }
 
     return (
-        <div className="Container">
-            <Header />
-            <div className="row col-2">
-                <Main onAdd={onAdd} products = {products} />
-                <Basket onAdd={onAdd} cartItems = {cartItems} />
-            </div>
+        <div>
+            <input type="text" placeholder="Datum" onChange={(input) => setData(input.target.value)} />
+            <button onClick={<div>
+                <h1>{data.text}</h1>
+            </div>}>click</button>
+            
+
         </div>
     )
-};
+}
 
-export default App;
+export default Vezba;
