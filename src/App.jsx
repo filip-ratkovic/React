@@ -1,25 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import React from "react";
-import Movie from "./Movie/Movie";
-import {Route, Routes, Link} from "react-router-dom";
-import Tours from "./components/ToursCard/Tours";
-import TourCard from "./components/ToursCard/TourCard"
+import {Context} from "./UserContext"
 
 const App = () => {
+    const {user, setUser} = useContext(Context);
+
     return(
-
         <div>
-            <div>
-               <Link to="/home"><button>Home</button></Link>
-               <Link to="/tours"><button>Tourse</button></Link> 
-
-            </div>
-        <Routes>
-        <Route path={"/"}  element={<h1>Welcome</h1>}/>
-        <Route path={"/home"}  element={<h1>Gde si dariseee</h1>}/>
-        <Route path={"/tours"}  element={<TourCard/>}/>
-    </Routes>
-    </div> 
+            <button onClick={() =>{
+                setUser(user-1);
+            }}>-</button>
+            <h1>{user}</h1>
+            <button
+            onClick={() =>{
+                setUser(user+1);
+            }}>+</button>
+        </div>
         )
 }
 
