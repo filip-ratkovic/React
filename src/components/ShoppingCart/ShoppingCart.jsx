@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Basket from "./components/ShoppingCart/Basket";
-import Header from "./components/ShoppingCart/Header";
-import Main from "./components/ShoppingCard/Main";
-import "./components/ShoppingCard/Shopping.css"
+import Basket from "./Basket";
+import Header from "./Header";
+import Main from "./Main";
+import "./Shopping.css"
 import data from "./data"
+
 const ShoppingCart = () => {
     const {products} = data;
     const [cartItems, setCartItems] = useState([]);

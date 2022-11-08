@@ -7,16 +7,16 @@ const Calculator = () => {
   const ops = ["/", "*", "+", "-", "."];
 
   const updateCalc = value => {
-    if(ops.includes(value) && calc==="" || 
-    ops.includes(value) && ops.includes(calc.slice(-1))
-    ){
+    if (ops.includes(value) && calc === "" ||
+      ops.includes(value) && ops.includes(calc.slice(-1))
+    ) {
       return;
     }
 
     setCalc(calc + value);
 
-    if(!ops.includes(value)) {
-      setResult(eval(calc+value).toString())
+    if (!ops.includes(value)) {
+      setResult(eval(calc + value).toString())
     }
   }
 
@@ -25,11 +25,11 @@ const Calculator = () => {
 
     for (let i = 1; i < 10; i++) {
       digits.push(
-      <button
-        onClick={() => {
-          updateCalc(i.toString())
-        }} key={i}>{i}
-      </button>)
+        <button
+          onClick={() => {
+            updateCalc(i.toString())
+          }} key={i}>{i}
+        </button>)
     }
     return digits;
   }
@@ -39,10 +39,9 @@ const Calculator = () => {
   }
 
   const deleteLast = () => {
-    if(calc === "") {
+    if (calc === "") {
       return;
     }
-
     const value = calc.slice(0, -1);
     setCalc(value)
   }

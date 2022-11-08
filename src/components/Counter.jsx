@@ -8,7 +8,6 @@ const Counter = () => {
       <button
         onClick={() => {
           setCounter(counter - 1);
-          console.log(counter);
         }}
       >
         -1
@@ -17,7 +16,6 @@ const Counter = () => {
       <button
         onClick={() => {
           setCounter(counter + 1);
-          console.log(counter);
         }}
       >
         +1

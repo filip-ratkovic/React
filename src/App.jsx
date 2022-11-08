@@ -1,8 +1,11 @@
 import React from "react";
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <ShoppingCart/>
+        </div>
     )
 }
 
