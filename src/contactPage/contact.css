@@ -1,0 +1,227 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  :root {
+    --white:#fff;
+    --black:#292929;
+    --background:#fffefc;
+    --gold:#d9b36a;
+    --grey:#cecccd;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--black);
+    font-family:  Helvetica, sans-serif;
+  }
+
+.contact-main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.main-cont{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+.contact-us-image {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+}
+
+.contact-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    flex-direction: column;
+}
+
+.contact-us-cont{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-input-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-input{
+    width: 60%;
+    height: 50%;
+    margin-top: 50px;
+}
+
+.ime-prezime {
+    width: 100%;
+    display: flex;
+}
+#prezime {
+margin-left: auto;
+}
+
+#broj-telefona {
+    margin-left: auto;
+}
+#broj-telefona input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.mail-telefon {
+    width: 100%;
+    display: flex;
+}
+
+.contact-input input {
+    padding: 5px 10px;
+    background-color: #fffefc;
+    border-radius:2px;
+    border: none;
+    outline: none;
+    width: 45%;
+    margin-top: 10px;
+}
+
+
+.text-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#text-area{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.contact-btn{
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: var(--white);
+    background-color: var(--gold);
+    float: right;
+    margin-top: 10px;
+    font-size:18px;
+    cursor: pointer;
+    transition: transform .3s;
+    letter-spacing: 1.7px;
+}
+
+.contact-btn:hover {
+    transform: scale(1.05);
+}
+
+.contact-header{
+    width: 100%;
+    text-align: left;
+}
+
+.contact-info{
+    margin: 40px 0px 0px 50px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: var(--white);
+    border-radius: 3px;
+    margin-top: 10px;
+    display: flex;
+    letter-spacing: 2px;
+}
+
+.info h3 {
+    margin-bottom: 2px;
+    letter-spacing: 4px;
+}
+
+.contact-icon{
+    color: var(--gold);
+    font-size: 22px;
+}
+
+.icon-cont {
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.info-cont {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.info-cont h3 {
+    margin-top: 7px;
+}
+
+.info-cont a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.info-cont a:hover {
+    color: var(--grey);
+}
+
+.info-mail p:hover {
+    cursor: pointer;
+    color: var(--grey);
+}
+
+.lokacija-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.kontakt-header{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.kontakt-header a {
+    text-decoration: none;
+    color: var(--grey);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.lokacija-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

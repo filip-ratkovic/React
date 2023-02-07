@@ -1,9 +1,9 @@
 import React from "react";
-import Expense from "./udemy/components/first/Expense";
+import Contact from "./contactPage/Contact";
 const App = () => {
   return (
     <div>
-      <Expense/>
+        <Contact/>
     </div>
   )
 }
