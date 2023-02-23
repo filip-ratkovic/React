@@ -5,9 +5,14 @@ import NewExpense from "./udemy/components/form/NewExpense";
 
 
 const App = () => {
+
+  const addExpenseHandler = expense => {
+    console.log(expense )
+    console.log('app.js')
+  }
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onAddExpense = {addExpenseHandler}/>
       <Expense/>
     </div>
   )
