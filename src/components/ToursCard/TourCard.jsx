@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 import React from "react"
 import Tours from "./Tours"
-import Loading from "./Loading"
 import "./Tours.css";
 const url = "https://course-api.com/react-tours-project"
 
@@ -35,7 +34,8 @@ const TourCard = () => {
     if (loading) {
         return (
             <main>
-                <Loading />
+                {/* <Loading /> */}
+                <h1>loading</h1>
             </main>
         )
     }
